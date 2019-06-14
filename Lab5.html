@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lab5 Template</title>
+	<meta charset="utf-8">
+
+	<script>
+
+    function convertToFahrenheit(){
+    var Celsius = parseFloat(prompt(" Please enter a temperature as Celsius. "));
+        if(isNaN(Celsius)){
+            do{
+                Celsius=parseFloat(prompt("You did not enter a number.Please enter a numer"));
+              }while (isNaN(Celsius));
+          }  else {
+              var Fahrenheit = (Celsius * (9/5)) +32;
+               alert( "You entered " + Celsius + " in Celsius "  + " this is " + Fahrenheit + " Fahrenheit ") ;
+            }
+}
+
+	</script>
+</head>
+
+<body>
+<h3>Lab 5 - Introduction to JavaScript</h3>
+    <table>
+        <tr>
+            <th>Temperature conversion</td>
+        </tr>
+        <tr>
+			<td><input type="button" name="btnConvert" id="btnConvert" value="Convert!" onclick=convertToFahrenheit()></td>
+		</tr>
+    </table>
+</body>
+</html>
